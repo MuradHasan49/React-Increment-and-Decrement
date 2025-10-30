@@ -17,7 +17,7 @@ const First = () => {
       <div className="card">
         <div className="content">
           <button className="btn" onClick={() => setCount2((count) => count - 1)}>
-            Increment count is : {DecrementCount}
+            Decrement count is : {DecrementCount}
           </button>
         </div>
       </div>
