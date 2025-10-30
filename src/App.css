@@ -1,0 +1,125 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  gap: 20px;
+  background: url(/src/assets/wallpaperflare.com_wallpaper.jpg) no-repeat center/cover;
+}
+
+/* Page container */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0077ff, #00d4ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Cards wrapper */
+.cards {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Individual card */
+.card {
+  background: #ffffff10;
+  backdrop-filter: blur(8px);
+  padding: 30px 50px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  width: 250px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Counter text */
+.count {
+  font-size: 2.5rem;
+  margin: 15px 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Button styles */
+.btn {
+  background: #0d438180;
+  border: none;
+  color: #0077ff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #0077ff;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Specific button colors */
+.btn.inc {
+  background: #00ffb3;
+  color: #003d3d;
+}
+
+.btn.inc:hover {
+  background: #00cc8f;
+  color: white;
+}
+
+.btn.dec {
+  background: #ff6666;
+  color: white;
+}
+
+.btn.dec:hover {
+  background: #e60000;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .box{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+}
+
