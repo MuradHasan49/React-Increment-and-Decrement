@@ -1,3 +1,3 @@
-#React Increment and Decrement
+# React Increment and Decrement
 
 Live Demo : https://reactincremerndecrement.netlify.app/
